@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tour</title>
+    <meta name="description" content="Information and registration for a tour">
+    <link rel="shortcut icon" href="icon.svg">
+
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/themes.css">
+
+    <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/honor.css">
+    <link rel="stylesheet" href="styles/sponsor.css">
+
+    <script src="scripts/index.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <label tabindex="0" for="info-screen">Info</label>
+            <label tabindex="0" for="honor-screen">Honors</label>
+            <label tabindex="0" for="sponsor-screen">Sponsors</label>
+            <a tabindex="0" href="" target="_blank" rel="noopener noreferrer">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <input id="info-screen" type="radio" name="navigation" checked />
+        <section>
+            Info
+        </section>
+
+        <input id="honor-screen" type="radio" name="navigation" />
+        <section>
+            Honor
+        </section>
+
+        <input id="sponsor-screen" type="radio" name="navigation" />
+        <section>
+            Sponsor
+        </section>
+    </main>
+</body>
+</html>

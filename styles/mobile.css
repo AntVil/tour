@@ -1,0 +1,39 @@
+@media (width <= 500px) {
+    body {
+        flex-direction: column-reverse;
+    }
+    
+    main {
+        margin-bottom: auto;
+    }
+
+    nav {
+        justify-content: space-evenly;
+    }
+
+    nav>:is(label, a) {
+        /* hide text */
+        font-size: 0;
+        width: 30px;
+        height: 30px;
+        background-color: var(--theme-color-1);
+        mask-position: center;
+        mask-repeat: no-repeat;
+    }
+    
+    nav>[for="info-screen"] {
+        mask-image: url("./icons/info.svg");
+    }
+    
+    nav>[for="honor-screen"] {
+        mask-image: url("./icons/honor.svg");
+    }
+    
+    nav>[for="sponsor-screen"] {
+        mask-image: url("./icons/sponsor.svg");
+    }
+
+    nav>a {
+        mask-image: url("./icons/register.svg");
+    }
+}
